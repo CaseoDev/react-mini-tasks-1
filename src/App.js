@@ -45,6 +45,10 @@ function App() {
   const answer2 = quizData[qNum - 1].answer2;
   const answer3 = quizData[qNum - 1].answer3;
   const answer4 = quizData[qNum - 1].answer4;
+  const questionId1 = quizData[qNum - 1].toString() + "-1";
+  const questionId2 = quizData[qNum - 1].toString() + "-2";
+  const questionId3 = quizData[qNum - 1].toString() + "-3";
+  const questionId4 = quizData[qNum - 1].toString() + "-4";
 
   const HandleControls = () => {
     if (qNum == 1) {
@@ -72,7 +76,11 @@ function App() {
         answer3={answer3}
         answer4={answer4}
         questionNum={qNum}
-        questionId={`1-1`}
+        // questionId={`1-1`}
+        questionId1={questionId1}
+        questionId2={questionId2}
+        questionId3={questionId3}
+        questionId4={questionId4}
       />
 
       <HandleControls />
